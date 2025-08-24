@@ -6,7 +6,7 @@ const KEY = 'settings'; // ключ который будет хранится �
 
 export async function i18nInit() {
     const { lang = FALLBACK } = load(KEY) || {}; // получение языка из локал стораджа
-    const dict = await fetch(`/src/js/data/i18n/${lang}.json`).then(r=>r.json()); // поиск перевода из json файла
+    const dict = await fetch(`/js/data/i18n/${lang}.json`).then(r=>r.json()); // поиск перевода из json файла
     document.querySelectorAll('[data-i18n]').forEach(node => {
         const key = node.getAttribute('data-i18n');
         if (dict[key]) node.textContent = dict[key];

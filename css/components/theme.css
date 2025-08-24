@@ -1,0 +1,18 @@
+:root {
+  --bg: #fff;
+  --fg: #111;
+  --accent: #2b6cff;
+}
+
+[data-theme=dark] {
+  --bg: #0e0f10;
+  --fg: #e5e7eb;
+  --accent: #7aa2ff;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+/*# sourceMappingURL=theme.css.map */

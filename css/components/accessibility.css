@@ -1,0 +1,29 @@
+html.access {
+  filter: contrast(115%);
+}
+
+html.access * {
+  outline-offset: 2px;
+}
+
+html.access .no-anim, html.access * {
+  transition: none !important;
+}
+
+html.size-s {
+  font-size: 14px;
+}
+
+html.size-m {
+  font-size: 16px;
+}
+
+html.size-l {
+  font-size: 18px;
+}
+
+html.size-xl {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=accessibility.css.map */
