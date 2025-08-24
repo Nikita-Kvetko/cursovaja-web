@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "name": "users1"
+    }
+  ],
+  "products": [
+    {
+      "name": "products1"
+    }
+  ],
+  "cart": {
+    "name": "cart1"
+  },
+  "articles": {
+    "name": "articles1"
+  }
+}

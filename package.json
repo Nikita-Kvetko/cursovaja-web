@@ -1,0 +1,31 @@
+{
+  "name": "arco-mebel",
+  "version": "1.0.0",
+  "description": "АркоМебель",
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev:web": "live-server pages --port=3000",
+    "dev:api": "json-server --watch api/db.json --port 3001",
+    "watch:css": "sass scss:css --watch",
+    "dev": "npm-run-all -p dev:api dev:web watch:css",
+    "build:css": "sass src/css:public/css --no-source-map --style=compressed",
+    "lint:js": "eslint src/js --ext .js",
+    "lint:css": "stylelint \"src/css/**/*.scss\"",
+    "format": "prettier --write \"src/**/*.{js,scss,html,json}\""
+  },
+  "devDependencies": {
+    "eslint": "^9.34.0",
+    "eslint-config-prettier": "^10.1.8",
+    "json-server": "^1.0.0-beta.3",
+    "live-server": "^1.2.2",
+    "normalize.css": "^8.0.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.6.2",
+    "sass": "^1.90.0",
+    "stylelint": "^16.23.1",
+    "stylelint-config-standard": "^39.0.0"
+  }
+}
+
