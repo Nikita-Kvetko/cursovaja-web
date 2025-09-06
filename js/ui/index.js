@@ -1,6 +1,6 @@
-import { i18nInit } from "../lib/i18n.js";
 import { themeInit } from "../lib/theme.js";
 import { accessInit } from "../lib/accessibility.js";
+import { i18nInit } from "../lib/i18n.js";
 
 import { renderHeader } from "./header.js";
 import { renderFooter } from "./footer.js";
@@ -13,13 +13,10 @@ import { renderWorks } from "./works.js";
 import { renderContacs } from "./contacs.js";
 import { renderInsta } from "./insta.js";
 
-i18nInit();
 themeInit();
 accessInit();
 
 renderHeader(document.getElementById("site-header"));
-renderFooter(document.getElementById("site-footer"));
-
 renderBenefits(document.getElementById("site-benefits"));
 renderCatalog(document.getElementById("site-catalog"));
 renderPopular(document.getElementById("site-popular"));
@@ -28,3 +25,6 @@ renderSales(document.getElementById("site-sales"));
 renderWorks(document.getElementById("site-works"));
 renderContacs(document.getElementById("site-contacs"));
 renderInsta(document.getElementById("site-insta"));
+renderFooter(document.getElementById("site-footer"));
+
+i18nInit();
