@@ -1,0 +1,37 @@
+.benefits {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.benefits__box {
+  width: 100%;
+  max-width: 1520px;
+  height: 387px;
+  background-color: #C4C4C4;
+  border-radius: 16px;
+  margin: 0 auto;
+}
+
+#site-benefits {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .benefits .benefits__box {
+    height: 280px;
+  }
+}
+@media (max-width: 768px) {
+  .benefits .benefits__box {
+    height: 200px;
+  }
+}
+@media (max-width: 480px) {
+  .benefits .benefits__box {
+    height: 150px;
+    border-radius: 12px;
+  }
+}
+
+/*# sourceMappingURL=benefits.css.map */

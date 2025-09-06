@@ -3,7 +3,7 @@ export function renderFooter(container) {
     <div class="footer">
        <div class="footer-top">
             <div class="footer-left">
-                <img src="../../image/logo-white.png" alt="logo-white">
+                <img src="../../image/logo-white.jpg" alt="logo-white">
                 <h3>8-961-525-91-91</h3>
                 <div class="footer-left-mid">
                     <div class="footer-left-mid-block">

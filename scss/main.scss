@@ -5,6 +5,7 @@
 @import "components/burger";
 @import "components/footer";
 @import "components/pagination";
+@import "components/benefits";
 
 * {
   margin: 0;
@@ -20,7 +21,6 @@ html {
 body {
   line-height: 1.6;
   color: #333;
-  background: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,6 +43,8 @@ button {
 
 input:focus {
   outline: none;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 main{

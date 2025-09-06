@@ -1,4 +1,9 @@
 export function renderBenefits(el) {
     if (!el) return;
-    el.innerHTML = `<h2 data-i18n="benefits.title">Наши преимущества</h2>`;
+    el.innerHTML = `
+      <div class="benefits">
+        <div class="benefits__box"></div>
+        <h2>Наши преимущества</h2>
+      </div>
+    `;
 }
