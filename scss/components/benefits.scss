@@ -11,11 +11,70 @@
   border-radius: 16px;
   margin: 0 auto;
 }
+.benefits__container {
+  width: 100%;
+  max-width: 1520px;
+  background-color: white;
+  border-radius: 16px;
+  margin: 0 auto;
+}
 #site-benefits {
   display: block;
   width: 100%;
 }
+.benefits__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 1520px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.benefits__title {
+  text-align: left;
+  font-size: 2rem;
+  margin: 2rem 0 2rem 0;
+}
+.benefits__item {
+  width: 357px;
+  height: 94px;
+  background-color: #e5e7eb;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
 
+  img {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+  }
+
+  p {
+    font-size: 1rem;
+    margin: 0;
+  }
+}
+
+/* адаптив */
+@media (max-width: 1200px) {
+  .benefits__row {
+    justify-content: center;
+  }
+  .benefits__item {
+    flex: 1 1 45%;
+    max-width: 357px;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits__item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
 // адаптивность
 @media (max-width: 1024px) {
   .benefits .benefits__box {
