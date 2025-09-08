@@ -1,0 +1,36 @@
+.insta__box {
+  width: 100%;
+  max-width: 1520px;
+  height: 769px;
+  margin: 0 auto;
+  text-align: center;
+}
+#site-insta {
+  display: block;
+  width: 100%;
+}
+.insta__title {
+  text-align: left;
+  font-size: 2rem;
+  margin: 2rem 0 2rem 0;
+}
+
+// адаптивность
+@media (max-width: 1024px) {
+  .insta__box {
+    height: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .insta__box {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .insta__box {
+    height: 150px;
+    border-radius: 12px;
+  }
+}

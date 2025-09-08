@@ -1,0 +1,67 @@
+.catalog {
+  max-width: 1520px;
+  margin: 2rem auto;
+  padding: 0 15px;
+
+  &__title {
+    text-align: left;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  &__item {
+    position: relative;
+    width: 357px;
+    height: 238px;
+    border-radius: 16px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 16px;
+      display: block;
+    }
+
+    .catalog__badge {
+      position: absolute;
+      bottom: 0.5rem;
+      left: 0.5rem;
+      width: 108px;
+      height: 43px;
+      background-color: #384685;
+      border-radius: 8px;
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+/* адаптив */
+@media (max-width: 1200px) {
+  .catalog__grid {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .catalog__item {
+    width: 100%;
+    max-width: 357px;
+  }
+}
+
+@media (max-width: 768px) {
+  .catalog__grid {
+    grid-template-columns: 1fr;
+  }
+}

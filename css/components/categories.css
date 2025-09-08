@@ -1,0 +1,35 @@
+.categories {
+  max-width: 1520px;
+  margin: 2rem auto;
+  padding: 0 15px;
+}
+.categories__title {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+.categories__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.categories__btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #384685;
+  border-radius: 8px;
+  background: #fff;
+  color: #384685;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.categories__btn.active {
+  background: #384685;
+  color: #fff;
+  font-weight: bold;
+}
+.categories__btn:hover:not(.active) {
+  background: rgba(56, 70, 133, 0.1);
+}
+
+/*# sourceMappingURL=categories.css.map */
